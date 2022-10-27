@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.praktikum">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,11 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Praktikum">
         <activity
-            android:name=".day4.ui.Day4SecondActivity"
-            android:exported="false" />
-        <activity
-            android:name=".day4.ui.Day4Activity"
+            android:name=".day5.Day5Activity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +22,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".day3.Day3Activity"
+            android:name=".day4.ui.Day4SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".day4.ui.Day4Activity"
             android:exported="true"></activity>
+        <activity
+            android:name=".day3.Day3Activity"
+            android:exported="true" />
         <activity
             android:name=".day2.SecondActivity"
             android:exported="false" />
